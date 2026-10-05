@@ -1,0 +1,32 @@
+Folio (opencode-folio) — provenance and third-party notices
+============================================================
+
+Copyright (c) 2026 WhiteGiverMa. Licensed under the MIT License (see LICENSE).
+
+No third-party source code is copied into this repository.
+
+Folio reads SQLite session stores written by OpenCode. OpenCode is an
+independent project distributed under the MIT License
+(https://github.com/anomalyco/opencode). Folio is not affiliated with or
+endorsed by the OpenCode project.
+
+Storage layouts, JSON message shapes, ordering rules and the v1-to-v2 migration
+completion marker were verified against these pinned upstream revisions before
+implementation. They are referenced as behavioral specifications only:
+
+- OpenCode v1.18.34, commit aec0b9a6d8898f68f923aaf08b7306d931fd9d76
+  (session / message / part tables, message-created+id ordering, native part IDs,
+  synthetic/ignored/summary flags, tool state fields).
+- OpenCode v2.0.21, commit 8a8bd622a3d7dc29ccf30ec17f84e363ed95ed72
+  (session_v2 / session_message tables, seq ordering, scalar user.text and
+  assistant content item shapes, tool/file/error content shapes, and the
+  migration.v1-v2 KV marker with {phase:"completed"}).
+
+The design contract lives in the private O3P workspace; this repository ships
+only original implementation code, synthetic test fixtures and project
+licensing.
+
+Runtime dependencies: none beyond the Node.js standard library (node:sqlite,
+node:fs, node:path, node:util, node:crypto). Build-time devDependencies
+(TypeScript, @types/node) are MIT/Apache-2.0 licensed and are not redistributed
+in the published package contents beyond normal npm dependency metadata.

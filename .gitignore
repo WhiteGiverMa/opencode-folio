@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.omo/
+*.tsbuildinfo
+exports/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.tgz
