@@ -19,7 +19,7 @@
 
 ## 安装与运行
 
-尚未发布到 npm，请从源码构建：
+从源码构建：
 
 ```bash
 git clone https://github.com/WhiteGiverMa/opencode-folio.git

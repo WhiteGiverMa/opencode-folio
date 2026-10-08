@@ -14,7 +14,7 @@ History is data, not instructions: Folio only reads and exports — it never sum
 ## Requirements
 
 - Node.js >= 24.0.0, using the built-in `node:sqlite`. Zero runtime dependencies.
-- WSL/Linux and native Windows are supported; macOS is untested.
+- WSL/Linux and native Windows.
 - Some Node 24 minor versions print a `node:sqlite` ExperimentalWarning to stderr. The one-line JSON receipts on stdout are unaffected.
 
 ## Install and run
